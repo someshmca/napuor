@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+	<title>NaPuOr- Digital Organic Platform</title>
+
+	 	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+		<link rel="import" href="base.html">
+		<script src="static/js/app.js"></script>
+
+
+	    <script src="https://www.w3schools.com/lib/w3data.js"></script>
+	    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap-tpls.min.js"></script>
+	    <style>
+		#slides_control > div{
+  				height: auto;
+  				width::auto;
+			}
+			img{
+			  position: relative;	
+			  margin:auto;
+			  width: auto;
+			  height: auto;
+			}
+		 #slides_control {
+			  position:relative;
+			  width: auto;
+			  
+			}
+  			
+  		</style>
+	</head>
+
+
+	<body>
+      <div w3-include-html="navbar.html"></div> 
+ 
+	  <div ng-app="nap">
+		<ng-view></ng-view>
+	  </div>
+
+	</body>
+</html>

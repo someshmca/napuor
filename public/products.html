@@ -1,0 +1,27 @@
+  <br> 
+	    <br>       	
+
+	  		<div class="row">
+	           <div ng-repeat="product in products  | filter:searchBox">
+	               <div class="clearfix" ng-if="$index % 4 == 0"></div>
+	               <div class="col-sm-3">
+	                    <a href="#/product" ng-click="productDetail(product.id)">
+			           
+		                    <div class="thumbnail text-center"  >    
+
+				                <figure>
+		        	            <img class="img-responsive"   src="{{ product.image  }}" style=" background-color:transparent;  height:150px;  width:250px;">
+		                        </figure>
+		            		</div>  
+
+		            		<div class="center">
+
+		                		<p>{{product.sku}} ({{ product.pack }}{{ product.unit }})  </p> 
+		                    <p> Rs.{{product.price }}/- </p>
+				                
+		                	</div>
+                        </a> 
+	               </div>
+	           </div>
+	        </div>
+

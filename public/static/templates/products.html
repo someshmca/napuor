@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% load static from staticfiles %}
+
+{%  block content %}
+
+
+<div ng-app="nap">
+	
+   
+{% verbatim %}
+    
+ <div ng-controller="list-categories" >
+    <div class="row">
+      <div ng-repeat="category in categories" >
+         <div class="clearfix" ng-if="$index % 4 == 0"></div> 
+          <div class="col-sm-3"> 
+                <a href="">
+                <figure>
+                  <img class="img-responsive"   src="{{ category.image  }}" style="margin-left: auto;margin-right: auto;display: block; background-color:transparent;  height:100px;  width:200px;">
+                <figcaption> <h4 class="text-center">{{category.title}}  </h4> </figcaption>  
+                </figure>
+                </a>
+          </div>  
+      </div>
+    </div>
+  
+  </div>
+    <br>
+    <br>
+    <div ng-controller="list-category">
+    <div ng-init="category(product)">{{}}</div>
+              
+		<div class="row">
+           <div ng-repeat="product in category" >
+               <div class="clearfix" ng-if="$index % 3 == 0"></div>
+               <div class="col-sm-4">
+                  
+                    <div class="thumbnail text-center"  >    
+
+		                <figure>
+        	            <img class="img-responsive"   src="{{ product.image  }}" style=" background-color:transparent;  height:200px;  width:300px;">
+                        </figure>
+            		    </div>  
+
+            		    <div class="center">
+
+                		<p>{{product.sku}} ({{ product.pack }}{{ product.unit }})  </p> 
+                    <p> Rs.{{product.price }}/- </p>
+		                
+            		    </div>
+                    </div>  
+               </div>
+           </div>
+        </div>
+
+    </div>    
+{% endverbatim %}
+	
+</div>
+
+
+
+{%  endblock %}
