@@ -1,280 +1,94 @@
 <!DOCTYPE html>
 <html>
 	<head lang="en">
-	  <meta charset="utf-8">
-	  <title>Nature Pure Organic</title>
+		<meta charset="utf-8">
+		<title>Nature Pure Organic</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/custom_styles.css">
+		<link rel="stylesheet" href="css/navbar_top.css">
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/responsive.css">		
+		<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+		<script src="js/respond.min.js"></script>
+		<![endif]-->       
+		<link rel="shortcut icon" href="images/ico/favicon.ico">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png"
+		<script src="js/libs/jquery.min.js"></script>
+		<script src="js/libs/bootstrap.min.js"></script>
 
-		
+		<script type="text/javascript" src="js/libs/angular.min.js"></script>
 
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-<link href="static/css/bootstrap.min.css" rel="stylesheet">
-<link href="static/css/navbar-static-top.css" rel="stylesheet">
-<link href="static/css/custom.css" rel="stylesheet">
-
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.28/angular.min.js"></script>
-
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.28//angular-route.min.js"></script>
-<!--
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap-tpls.min.js"></script>
--->
-	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap-tpls.min.js"></script>
-
-
-<script type="text/javascript" src="static/js/main.js"></script>		
-
-<style type="text/css">
-
-
-.navbar-static-top {
-    margin-bottom: 0px !important;
-    background-color: green;
-    border-color: green;
-}
-
-img {
-    max-width: 100%;
-    max-height: 100%;
-}
-
-.portrait {
-    height: 80px;
-    width: 30px;
-}
-
-.landscape {
-    height: 30px;
-    width: 80px;
-}
-
-.square {
-    height: 100px;
-    width: 200px;
-}
-
-
-.thumbnail {
- border: 0 none;
- box-shadow: none;
- color: transparent;
- background-color: transparent;
- border-style: transparent;
- height: 200px;
- width: 300px;
-}
-
-.center {
-    text-align: center;
-    margin: auto;
-    width: 100%;
-    border: 0px solid #73AD21;
-    padding: 0px;
-}
-
-#slides_control > div{
-  				height: auto;
-  				width::auto;
-}
-img{
-  position: relative;	
-  margin:auto;
-  width: auto;
-  height: auto;
-}
-#slides_control {
-  position:relative;
-  width: auto;
-	  
-}
-
-
-.post-content {
-    top:0;
-    left:50px;
-    position: absolute;
-}
-
-.thumbnail{
-    position:relative;
-
-}
-
-
-
-.navbar-nav > li > a, .navbar-brand .navbar-fixed-top{
-    padding-top:15px !important; 
-    padding-bottom:0 !important;
-    height: 10px;
-
-}
-
-
-.navbar {
-  height:150px ;
-  color: white !important;
-}
-
-
-
-ul.dropdown-menu {
-    background-color: white;
-
-}
-
-.navbar-nav > li > .dropdown-menu a{ color: gold; #555555; }
-
-
-.sidebar-nav {
-    padding: 0px 0;
-}
-
-.dropdown-menu .sub-menu {
-    left: 100%;
-    position: absolute;
-    top: 0;
-    visibility: hidden;
-    margin-top: -1px;
-}
-
-.dropdown-menu li:hover .sub-menu {
-    visibility: visible;
-}
-
-.dropdown:hover .dropdown-menu {
-    display: block;
-
-}
-
-.nav-tabs .dropdown-menu, .nav-pills .dropdown-menu, .navbar .dropdown-menu {
-    margin-top: 0;
-}
-
-.select:active, . select:hover {
-  outline-color: red
-}
-
-
-
-.navbar .sub-menu:before {
-    border-bottom: 7px solid transparent;
-    border-left: none;
-    border-right: 7px solid rgba(0, 0, 0, 0.2);
-    border-top: 7px solid transparent;
-    left: -7px;
-    top: 10px;
-}
-.navbar .sub-menu:after {
-    border-top: 6px solid transparent;
-    border-left: none;
-    border-right: 6px solid #fff;
-    border-bottom: 6px solid transparent;
-    left: 10px;
-    top: 11px;
-    left: -6px;
-}
-
-
-
-</style>
-
-
-
+		<script type="text/javascript" src="js/libs/angular-route.min.js"></script>
+		<!--
+		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap-tpls.min.js"></script>
+		-->
+		<script type="text/javascript" src="js/libs/ui-bootstrap-tpls.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
 	</head>
 	<body>
-      
-         <nav class="navbar navbar-default navbar-fixed-top"  style="height:100px;background-color:orange; ">
-      
-      <div class="container-fluid">
-      
-        <ul class="navbar-header" >
-         <figure>
+		<header id="header"><!--header-->		
+			<div class="header-middle"><!--header-middle-->
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="logo pull-left">
+								<a href="index.html"><img src="images/logo.png" alt="" /></a>
+							</div>
+						</div>
+						<div class="col-sm-8">
+							<div class="shop-menu pull-right">
+								<ul class="nav navbar-nav">
+									<li><a href="#"><i class="fa fa-user"></i> Account</a></li>
+									<li><a href="#"><i class="fa fa-star"></i> Wishlist</a></li>
+									<li><a href="checkout.html"><i class="fa fa-crosshairs"></i> Checkout</a></li>
+									<li><a href="cart.html"><i class="fa fa-shopping-cart"></i> Cart</a></li>
+									<li><a href="login.html"><i class="fa fa-lock"></i> Login</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!--/header-middle-->
 
-          <img src="static/img/napuor.png"  style="width:50%;height:50%" alt="" class="img-responsive center-block" />
-          <figcaption>
-            <font color="white" size="2"><b>  Nature. Pure. Organic </b></font>
-            
-          </figcaption>
-          </figure>
-
-       </ul>
-      
-      <ul class="nav navbar-nav ">
-  
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="">Contact</a></li>
-           
-             <br>
-             <br>    
-             
-          <!--
-          <figure>      
-          <img src="{% static 'img/Napuor-logo.png'  %}"  style="width:30%;height:95px; top:0px"; alt="" class="img-responsive center-block" />
-            
-
-          </figcaption>
-          </figure>
-          --> 
-            
-
-
-        </ul>        
-         
-          
-        <ul class="nav navbar-nav navbar-right">
-      
-          <li>
-            <a href=''><i class="fa fa-shopping-cart fa-navbar-cart fa-lg"> </i> <span id="cart-count-badge" class='badge fa-5x'></span></a>
-          </li>
-
-            <li><a href="">Register</a></li>
-              <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Login<span class="caret"></span></a>
-                  <ul class="dropdown-menu" role="menu">
-                                 
-                      <form class='navbar-form' method='POST' action=''>
-                        <div class='form-group'>
-                            <input type='text' class='form-control' name='username' placeholder='Username' /> 
-                        </div>
-                        <div class='form-group'>
-                            <input type='password' class='form-control' name='password' placeholder='Password' />
-                        </div>
-                        <button type='submit'  class='btn btn-default btn-block'>Login</button>
-                    </form>
-                   <p class='text-center'><a href=''>Forgot password</a>?</p>
-
-
-                    <!-- <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li class="divider"></li>
-                    <li class="dropdown-header">Nav header</li>
-                    <li><a href="#">Separated link</a></li>
-                    <li><a href="#">One more separated link</a></li> -->
-                  </ul>
-                </li>
-                 
-        </ul>      
-
-   </div>
-          
-      
-    </nav>
-	  
-	  <div ng-app="mainApp" ng-controller="productsController">
-		<ng-view></ng-view>
-	  </div>
-
-
-
-
-
-
-
+			<div class="header-bottom"><!--header-bottom-->
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-9">
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+							</div>
+							<div class="mainmenu pull-left">
+								<ul class="nav navbar-nav collapse navbar-collapse">
+									<li><a href="index.html" class="active">Home</a></li>
+									<li><a href="aboutus.html">About Us</a></li>
+									<li><a href="products.html">Products</a></li>
+									<li><a href="contact-us.html">Contact Us</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="search_box pull-right">
+								<input type="text" placeholder="Search"/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!--/header-bottom-->
+		</header><!--/header-->	  
+		<div ng-app="mainApp" ng-controller="productsController">
+			<ng-view></ng-view>
+		</div>
 	</body>
 </html>

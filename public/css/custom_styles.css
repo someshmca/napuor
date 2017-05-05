@@ -1,0 +1,68 @@
+
+.logo img
+{
+	height:70px;
+}
+.carousel-control{
+	position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 10%;
+    font-size: 5em;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 2px rgb(255, 255, 255);
+    /* background-color: rgba(0,0,0,0); */
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
+.carousel-control .item{
+	padding-left:0;
+}
+.slides_control
+{
+	padding:0;
+}
+.slides_control .carousel-inner img
+{
+	height:350px !important;
+	width:100%;
+}
+.carousel-caption h4{
+	background-color:purple; display:inline-block; padding:5px;
+}
+.text-align-center {
+	text-align: center;
+}
+.productinfo img
+{
+	height:200px;
+	max-width:100%;
+	width:initial;
+}
+.productinfo p, .productinfo h2{
+	margin:5px 0;
+	padding:2px 0;
+}
+.og-price {
+	color:red;
+	text-decoration:line-through;
+}
+
+.fa-navbar-cart {
+	font-size: 18px;
+    vertical-align: middle;
+}
+
+
+.container-alert-flash {
+	position: absolute;
+    top: 10px;
+    z-index: 50000;
+    width: 100%;
+    right: 0%;
+    margin: 0px;
+    display:none;
+}
